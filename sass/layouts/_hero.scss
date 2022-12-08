@@ -1,0 +1,26 @@
+.overlay{
+    height: 600px;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: #212121;
+    background-image: 
+    linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+
+    url(../images/overlay.png)
+    
+}
+
+.hero{
+    background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-container{
+    text-align: center;
+}
+
+

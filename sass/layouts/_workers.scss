@@ -1,0 +1,104 @@
+.workers-list-common{
+    background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+    
+.title-section{
+    font-size: 36px;
+    line-height: 1.12;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;  
+    text-align: center;
+}
+
+ .workers-list{
+    display: flex;
+    width: (calc(100% - 90px)/4);
+    margin: 0;
+    gap: 30px;
+    margin: 0;    
+}
+    
+.section-title-item{
+    width: var(calc(100% - 90px)/4);
+    background-color: var(--title-text-color2);
+    width: 270px;
+    gap: 30px;  
+}
+
+.workers-div{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+.workers-capture{
+    margin-bottom: 16px;
+}
+   
+
+.third-headerworkers{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: var(--title-text-color);
+    padding-bottom: 10px;
+}
+
+.section-title-item{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;;
+}
+
+.job-title{
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    text-align: center;
+   
+}
+
+.list-social-netw{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.social-netw{
+   
+
+}
+
+.link-social-netw{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    fill: #AFB1B8;
+
+    transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    background-color: var(--accent-color);
+    fill: white;
+    }  
+}
+
+
+
+.social-netw-icons{
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    margin-left: 12px; 
+}

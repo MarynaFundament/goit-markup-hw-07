@@ -1,0 +1,58 @@
+.image-container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+   
+    }
+
+.title-h{
+    font-size: 36px;
+    line-height: 1.12;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;  
+        }
+
+
+.li-image{
+    position: relative;
+    display: flex;
+}
+
+.images{
+    display: flex;
+    gap: 30px;    
+        }
+
+.images-item{
+    width: (calc(100% - 60px)/3); 
+    margin: 0; 
+        }
+
+.img-title{
+}
+
+
+.image-title{
+
+   position: absolute;
+   height: 70px; ;
+   width: 370px ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   bottom: 0%;
+   font-family: var(--primary-text-color);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1,14;
+   text-align: center;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   
+   color: #FFFFFF;
+   background: rgba(47, 48, 58, 0.8);
+}
+
+    
+            
