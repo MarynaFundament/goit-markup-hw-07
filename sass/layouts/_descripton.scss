@@ -1,18 +1,17 @@
-.description-container {
+.description {
     padding-top: 94px;
-    padding-bottom: 94px;
     }
 
-.description {
+.description__list {
     display: flex;
     justify-content: space-between;
     }
 
-.description-item{
+.description__item{
     gap: 30px;
 }
 
-.svg-description{
+.description__svg{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,29 +24,22 @@
     margin-bottom: 30px;
 }
 
-.third-header{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    font-family: var(--title-text-color);
-    margin-top: 30px;
-}
-
-.description-paragraph{
-    font-family:var(--primary-font);
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    margin-top: 10px;
-    }
-
-.social-netw-iconss{
+.description__icons{
     margin-top: 25px;
     margin-right: 100px;
     margin-bottom: 25px;
     margin-left: 100px;
-     
     }
+
+.description__header{
+    @include font (var(--title-text-color), 700, 14px, 1.14, 0.03em, null);
+    
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.description__paragraph{
+    @include font (var(--primary-font), null, 14px, 1.71, 0.03em, var(--primary-text-color));
+    margin-top: 10px;
+    }
+

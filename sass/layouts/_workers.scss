@@ -39,12 +39,9 @@
    
 
 .third-headerworkers{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
+    @include font (null, 500, 16px, 1.18, 0.03em, var(--title-text-color));
+
     text-align: center;
-    letter-spacing: 0.03em;
-    font-family: var(--title-text-color);
     padding-bottom: 10px;
 }
 
@@ -70,11 +67,6 @@
     height: 100%;
 }
 
-.social-netw{
-   
-
-}
-
 .link-social-netw{
     width: 44px;
     height: 44px;
@@ -93,8 +85,6 @@
     fill: white;
     }  
 }
-
-
 
 .social-netw-icons{
     margin-top: 12px;

@@ -1,13 +1,8 @@
 .email-h{
-    font-family: var(--primary-font);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    
+    @include font (var(--primary-font), 700, 14px, 1.14, 0.03em, var(--title-text-color2));
+
     text-transform: uppercase;
-    
-    color: var(--title-text-color2);
-    
     margin-left: 93px;
     
     }
@@ -26,6 +21,8 @@
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
+
+        color: var(--title-text-color2);
     
         width: 358px;
         height: 50px;
@@ -36,20 +33,15 @@
     .button-footer{
     
         min-width: 160px;
-        font-family: var(--primary-font);
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
-        letter-spacing: 0.06em;
-    
+
+        @include font (var(--primary-font), 700, 16px, 1.87, 0.06em, var(--title-text-color2));
+
         display: inline-block;
         text-align: center;
-    
+
         background: var(--accent-color);
         border-radius: 4px;
         border: none;
-     
-        color:var(--title-text-color2);
         
         width: 200px;
         height: 50px; 

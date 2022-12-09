@@ -10,12 +10,7 @@
 }
 
 .logo-footer{
-    color:var(--title-text-color2);
-    font-family: var(--additional-font);
-    font-weight: 700;
-    font-size: 26px; 
-    line-height: 1.19;
-    letter-spacing: 0.03em;  
+    @include font (var(--additional-font), 700, 26px, 1.19, 0.03em, var(--title-text-color2));
 }
 
 .list-footer{
@@ -23,22 +18,13 @@
 }
 
 .footer-link {
-    color: var(--title-text-color2); 
+    @include font (var(--primary-font), null, 14px, 1.71, 0.03em, var(--title-text-color2));
     text-decoration: none;
-    font-family: var(--primary-font);  
 }
 
 .footer-contact{
-    color: rgba(255, 255, 255, 0.6);
+    @include font (var(--primary-font), null, 14px, 1.71, 0.03em, rgba(255, 255, 255, 0.6));
     text-decoration: none;
-    font-family: var(--primary-font); 
-}
-
-.footer-link, 
-.footer-contact {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .li-footer:not(:last-child){

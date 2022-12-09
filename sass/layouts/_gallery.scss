@@ -4,11 +4,7 @@
 }
 
 .gallery-header{
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font (var(--primary-font), 700, 18px, 2, 0.06em, var(--title-text-color));
 }
 
 .image-capture{
@@ -28,11 +24,7 @@
 
 
 .gallery-paragraph{
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-
+    @include font (var(--primary-font), null, 16px, 1.87, 0.03em, var(--primary-text-color));
 }
 
 .list-item{
@@ -50,7 +42,6 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
        }
     
-    
     &:nth-child(3n){
         margin-right: 0;
     }
@@ -66,10 +57,8 @@
     position: absolute;
     top:0;
     
-    font-family: var(--primary-font);
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
+    @include font (var(--primary-font), null, 18px, 1.55, 0.03em, var(--title-text-color2));
+
     padding-top: 63px;
     padding-right: 24px;
     padding-bottom: 63px;
@@ -78,8 +67,6 @@
     height: 100%;
 
     background: rgba(33, 150, 243, 0.9);
-    color: var(--title-text-color2);
-
     transform: translateY(100%);
     transition: transform 250ms var(--timing-function);
 

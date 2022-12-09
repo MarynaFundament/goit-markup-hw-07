@@ -1,11 +1,5 @@
 
 
-.header-container{
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-}
-
 .header{
     padding-top: 24px;
     padding-bottom: 25px;
@@ -13,7 +7,13 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-.logo{
+.header__container{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header__logo{
     color:var(--title-text-color);
     font-family: var(--additional-font);
     font-weight: 700;
@@ -24,25 +24,22 @@
     
 }
 
-.web{
+.header__web{
     color: var(--accent-color);
 }
 
-.header-nav{
-    display: flex;
-    gap:50px;
-}
-
-.navigation{
+.header__navigation{
     margin-right: auto;
    
 }
 
-.left-contact{
-    margin-left: 50px;
+.menu{
+    display: flex;
+    gap:50px;
 }
 
-.header-nav-link{
+
+.menu__item{
     text-decoration: none;
     font-family: var(--primary-font);
     font-weight: 500;
@@ -62,9 +59,7 @@
 }
 }
 
-
-
-.factive-border::after{
+.header__factive::after{
     content: ' ';
     display: inline-block;
     width: 100%;
@@ -76,7 +71,7 @@
 }
 
 
-.sactive-border::after{
+.header__sactive::after{
     content: ' ';
     display: inline-block;
     width: 100%;
@@ -87,7 +82,7 @@
     left: 0;
 }
  
-.contact{
+.header__contact{
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -97,16 +92,20 @@
     display: flex;
 
     transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  
     &:hover,
     &:focus{
-    color:var(--accent-color);
-       
+        color:var(--accent-color);
+           
+    }
 }
+
+.header__leftcontact{
+    margin-left: 50px;
 }
 
 
-.social-netw-icon{
+.header__svg{
     margin-right: 10px;
     fill: currentColor;
 
@@ -116,8 +115,6 @@
     &:focus{
     color:var(--accent-color);
 }
-}
-
-
     
+}
 

@@ -1,0 +1,11 @@
+@mixin font ($fnf, $fnw, $fns, $fnh, $fnsp, $clr)
+{
+   
+    font-family: $fnf;
+    font-weight: $fnw;
+    font-size: $fns; 
+    line-height: $fnh;
+    letter-spacing: $fnsp;
+
+    color:$clr;
+}
