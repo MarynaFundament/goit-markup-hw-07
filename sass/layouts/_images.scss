@@ -1,7 +1,18 @@
 .image{
-    padding-top: 94px;
     padding-bottom: 94px;
-   
+    display: none;
+
+    @include tablet{
+        max-width: 768px;
+        display: none;
+    }
+
+    @include desktop {
+        max-width: 1200px;
+        display: block;
+        margin-left: 30px;
+       
+    }
     }
 
 .image__header{
@@ -14,21 +25,21 @@
 
  .images__list{
     display: flex;
-    gap: 30px;    
-                }
+    gap: 30px;  
+    
+ }
 
 
 .images__item{
     position: relative;
     display: flex;
-}
 
-
-.images__item{
-    width: (calc(100% - 60px)/3); 
+    width: 100%; 
     margin: 0; 
-        }
 
+    width: calc((100% - 30px)/3);
+
+}
 
 .image__title{
 

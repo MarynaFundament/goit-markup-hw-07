@@ -1,5 +1,22 @@
 .footer-icons-container{
-    margin-left: 70px;
+
+    @include mobile{
+        max-width: 480px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    @include tablet {
+        max-width: 768px;
+        margin-top: 60px;
+        margin-bottom: 102px;
+    }
+
+    @include desktop {
+        max-width: 1200px;
+    
+    }
+
 }
 
 .footer-t{
@@ -7,6 +24,23 @@
 
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @include mobile {
+        max-width: 480px;
+        margin-left: 167px;
+
+    }
+
+    @include tablet {
+        max-width: 768px;
+        margin-left: 45px;
+    }
+
+    @include desktop  {
+        max-width: 1200px;
+       
+    }
+ 
 }
 
 .list-ficons{
@@ -19,9 +53,6 @@
     margin-top: 20px;
 }
 
-.f-icons{
-   
-}
 
 .link-list-ficons{
     width: 44px;

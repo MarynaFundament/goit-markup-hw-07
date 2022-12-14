@@ -20,13 +20,13 @@
       <a class="header__logo" href="./index.html"> <span class="header__web"> Web</span>Studio </a>
       <nav class="navigation header__navigation">
           <ul class="menu">
-            <div>
-              <li><a class="menu__item " href="./index.html">Студія</a></li>
-            </div>
-             <li><a class="menu__item header__sactive" href="./portfolio.html">Портфоліо</a></li>
+              <li><a class="menu__item header__factive" href="./index.html">Студія</a></li>
+              <li><a class="menu__item " href="./portfolio.html">Портфоліо</a></li>
               <li"><a class="menu__item"href="#">Контакти</a></li>
           </ul>
       </nav>
+
+      <div class="header_contacts">
       <a class="header__contact" href="info@devstudio.com">
             <svg class="header__svg" width="16" height="12" >
             <use href="./images/icons.svg#icon-envelope-1"></use>
@@ -36,7 +36,69 @@
             <use href="./images/icons.svg#icon-smartphone-1"></use>
            </svg>+38 096 111 11 11
         </a>
-      </div>
+    </div>
+
+    <button  class="menu-open" type="button" data-menu-open>
+        <svg  class="menu-svg" width="40" height="40"> 
+        <use href="./images/icons.svg#icon-menu_40px-1"></use>
+       </svg></button>
+
+    <div class="mob__menu is-hidden" data-menu >
+       <div class="container ">
+        
+        <button type="button" class="menu__close" data-menu-close>
+             <svg  class="svg-modal" width="40" height="40"> 
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+           </svg>
+        </button>
+
+        <ul class="menu_list">
+            <div>
+              <li class="menu_list_item">
+                 <a class="menu_list_link link" href="./index.html">Студія</a></li>
+              <li class="menu_list_item"> 
+                <a class="menu_list_link link" href="./portfolio.html">Портфоліо</a></li>
+              <li class="menu_list_item"> 
+                <a class="menu_list_link link"href="#">Контакти</a></li>
+        </ul>
+          
+
+
+<div class="mob_menu_bottom">
+        <ul class="menu_contact">
+            <li class="menu_contact_item">             
+                 <a class="contact_link_top" href="info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="menu_contact_item">
+                <a class="contact_link_bottom" href="tel:+380961111111"> +38 096 111 11 11</a>
+
+            </li>
+        </ul>
+    
+
+      <ul class="soc_list">
+        <li class="soc_list_item">
+            <a class="social_link link" href="#"> Instagram
+            </a>
+        </li>
+        <li class="soc_list_item">
+            <a class="social_link link" href="#"> Twitter
+            </a>
+        </li>
+        <li class="soc_list_item">
+            <a class="social_link link" href="#"> Facebook
+            </a>
+        </li>
+        <li class="soc_list_item">
+             <a class="social_link link" href="#"> LinkedIn
+            </a>
+        </li>
+      </ul>
+    </div> 
+
+       </div>
+    </div>
+
   </header>
 
     <main>
@@ -55,11 +117,22 @@
             
                <ul class="gallery-list" >
                 
-                  <li  class="list-item"> <a href="#">
+                  <li  class="list-item"> <a href="#" class="portfolio-link">
 
                     <div class="top-image-portfolio">
+                      <picture>
+                        <source srcset="./images/img1.jpg 1х,
+                        ./images/img1-2x.jpg 2х"
+                        media="(min-width:1200px)">
+                      <source srcset="./images/img1.jpg 1х,
+                         ./images/img1-2x-tab.jpg 2х"
+                        media="(min-width:768px)">
+                      <source srcset="./images/img1.jpg 1х,
+                         ./images/img1-2x-mob.jpg 2х"
+                         media="(min-width:480px)">
                     <img src="./images/img1.jpg" width ="370" height="294" alt="Зображення1">
-                    <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </picture>
+                  <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
 
                     <div class="image-capture">
@@ -67,16 +140,27 @@
                     <p class="gallery-paragraph">Веб-сайт</p>
                    
                     </div>
-
-                  
                   </a>
                   </li>
                   
-                  <li class="list-item">  <a href="#">
+                  <li class="list-item">  <a href="#" class="portfolio-link">
 
                     <div class="top-image-portfolio">
+                      <source srcset="./images/img2.jpg 1х,
+                        ./images/img2-2x.jpg 2х"
+                        media="(min-width:1200px)">
+                      <source srcset="./images/img2.jpg 1х,
+                         ./images/img2-2x-tab.jpg 2х"
+                        media="(min-width:768px)">
+                      <source srcset="./images/img2.jpg 1х,
+                         ./images/img2-2x-mob.jpg 2х"
+                         media="(min-width:480px)">
+                    <picture>
                     <img src="./images/img2.jpg" width="370" height="294" alt="Зображення2">
-                    <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    </picture>
+
+
+                     <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div> 
                     
                     <div class="image-capture">
@@ -86,11 +170,24 @@
                   </a>   
                   </li>
 
-                  <li class="list-item" > <a href="#">
+                  <li class="list-item" > <a href="#" class="portfolio-link">
                    
                     <div class="top-image-portfolio">
+                    
+                      <picture>
+                          <source srcset="./images/img3.jpg 1х,
+                            ./images/img3-2x.jpg 2х"
+                            media="(min-width:1200px)">
+                          <source srcset="./images/img3.jpg 1х,
+                             ./images/img3-2x-tab.jpg 2х"
+                            media="(min-width:768px)">
+                          <source srcset="./images/img3.jpg 1х,
+                             ./images/img3-2x-mob.jpg 2х"
+                             media="(min-width:480px)">
                     <img src="./images/img3.jpg" width="370" height="294" alt="Зображення3">
-                    <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                     </picture>
+                    
+                     <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
 
                     <div class="image-capture">
@@ -100,11 +197,22 @@
                   </a>
                   </li>
 
-                  <li class="list-item" > <a href="#">
+                  <li class="list-item" > <a href="#" class="portfolio-link">
 
                     <div class="top-image-portfolio">
+                      <picture>
+                        <source srcset="./images/img4.jpg 1х,
+                        ./images/img4-2x.jpg 2х"
+                        media="(min-width:1200px)">
+                      <source srcset="./images/img4.jpg 1х,
+                         ./images/img4-2x-tab.jpg 2х"
+                        media="(min-width:768px)">
+                      <source srcset="./images/img4.jpg 1х,
+                         ./images/img4-2x-mob.jpg 2х"
+                         media="(min-width:480px)">
                     <img src="./images/img4.jpg"  width="370" height="294" alt="Зображення4">
-                    <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    </picture>
+                  <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
 
                     <div class="image-capture">
@@ -114,26 +222,49 @@
                   </a>
                   </li>
 
-                  <li class="list-item" ><a href="#">
+                  <li class="list-item" ><a href="#" class="portfolio-link">
 
                     <div class="top-image-portfolio">
+                      <picture>
+                        <source srcset="./images/img5.jpg 1х,
+                        ./images/img5-2x.jpg 2х"
+                        media="(min-width:1200px)">
+                      <source srcset="./images/img5.jpg 1х,
+                         ./images/img5-2x-tab.jpg 2х"
+                        media="(min-width:768px)">
+                      <source srcset="./images/img5.jpg 1х,
+                         ./images/img5-2x-mob.jpg 2х"
+                         media="(min-width:480px)">
                     <img src="./images/img5.jpg" width="370" height="294" alt="Зображення5">
-                    <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                      </picture>
+                  <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
 
 
-                    <div class="image-capture">
+                    <div class="image-capture" class="portfolio">
                     <h2 class="gallery-header">Проєкт Boxes</h2>
                     <p class="gallery-paragraph">Додаток</p>
                   </div>
                   </a>
                   </li>
 
-                  <li  class="list-item"> <a href="#">
+                  <li  class="list-item"> <a href="#" class="portfolio-link">
 
                     <div class="top-image-portfolio">
+                   <picture>
+                    <source srcset="./images/img6.jpg 1х,
+                        ./images/img6-2x.jpg 2х"
+                        media="(min-width:1200px)">
+                      <source srcset="./images/img6.jpg 1х,
+                         ./images/img6-2x-tab.jpg 2х"
+                        media="(min-width:768px)">
+                      <source srcset="./images/img6.jpg 1х,
+                         ./images/img6-2x-mob.jpg 2х"
+                         media="(min-width:480px)">
                     <img src="./images/img6.jpg" width="370" height="294" alt="Зображення6">
-                    <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </picture>
+
+                   <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                     
                     <div class="image-capture">
@@ -143,10 +274,21 @@
                   </a>
                   </li>
 
-                  <li class="list-item"> <a href="#">
+                  <li class="list-item"> <a href="#" class="portfolio-link">
 
                     <div class="top-image-portfolio">
+                      <picture>
+                        <source srcset="./images/img7.jpg 1х,
+                        ./images/img7-2x.jpg 2х"
+                        media="(min-width:1200px)">
+                      <source srcset="./images/img7.jpg 1х,
+                         ./images/img7-2x-tab.jpg 2х"
+                        media="(min-width:768px)">
+                      <source srcset="./images/img7.jpg 1х,
+                         ./images/img7-2x-mob.jpg 2х"
+                         media="(min-width:480px)">
                     <img src="./images/img7.jpg" width="370" height="294" alt="Зображення7">
+                    </picture>
                     <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
 
@@ -158,11 +300,23 @@
                   </a>
                   </li>
 
-                  <li class="list-item"> <a href="#">
+                  <li class="list-item"> <a href="#" class="portfolio-link">
                     
                     <div class="top-image-portfolio">
+                  <picture>
+
+                    <source srcset="./images/img8.jpg 1х,
+                    ./images/img8-2x.jpg 2х"
+                    media="(min-width:1200px)">
+                  <source srcset="./images/img8.jpg 1х,
+                     ./images/img8-2x-tab.jpg 2х"
+                    media="(min-width:768px)">
+                  <source srcset="./images/img8.jpg 1х,
+                     ./images/img8-2x-mob.jpg 2х"
+                     media="(min-width:480px)">
                     <img src="./images/img8.jpg" width="370" height="294" alt="Зображення8">
-                    <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </picture>
+                  <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
 
                     <div class="image-capture">
@@ -172,11 +326,22 @@
                   </a>
                   </li>
 
-                  <li class="list-item"> <a href="#">
+                  <li class="list-item"> <a href="#" class="portfolio-link">
                     
                     <div class="top-image-portfolio">
+                      <picture>
+                        <source srcset="./images/img9.jpg 1х,
+                     ./images/img9-2x.jpg 2х"
+                      media="(min-width:1200px)">
+                     <source srcset="./images/img9.jpg 1х,
+                     ./images/img9-2x-tab.jpg 2х"
+                     media="(min-width:768px)">
+                    <source srcset="./images/img9.jpg 1х,
+                     ./images/img9-2x-mob.jpg 2х"
+                     media="(min-width:480px)">
                     <img src="./images/img9.jpg" width="370" height="294" alt="Зображення9">
-                    <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </picture>
+                  <p class="opacity-text" >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
 
                     <div class="image-capture">
@@ -274,6 +439,7 @@
 
       </div> 
   </footer>
+  <script src="./js/menu.js"></script> 
 
 </body>
 </html>

@@ -1,8 +1,3 @@
-.main{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 
 .button-portfolio{
 
@@ -35,11 +30,26 @@
    
 .button-portfolio-list{
     display: flex;
-    margin-right: 0;
-    margin-bottom: 34px;
-    justify-content: center;
+    flex-wrap: wrap;
+
     gap: 8px;
-    margin-bottom: 50px;
+
+    margin-right: 0;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    @include tablet{
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+
+    @include desktop{
+    justify-content: center;
+    padding-bottom: 50px;
+    }
+
+
    }
 
 .hide-gallery{

@@ -1,31 +1,68 @@
 .workers-list-common{
     background-color: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-    
+    @include tablet{
+        padding-top: 67px;
+        padding-bottom: 53px;
+
+    }
+
+    @include desktop{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+   
+}
+  
 .title-section{
-    font-size: 36px;
-    line-height: 1.12;
-    letter-spacing: 0.03em;
-    padding-bottom: 50px;  
-    text-align: center;
+ 
+  
+font-weight: 700;
+font-size: 28px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+
+text-align: center;
+padding-bottom: 30px; 
+
+@include desktop{
+font-size: 36px;
+line-height: 1.12;
+letter-spacing: 0.03em;
+
+padding-bottom: 50px; 
+    
+} 
 }
 
  .workers-list{
     display: flex;
-    width: (calc(100% - 90px)/4);
     margin: 0;
-    gap: 30px;
-    margin: 0;    
+    gap: 30px; 
+    flex-wrap: wrap;
 }
     
 .section-title-item{
-    width: var(calc(100% - 90px)/4);
     background-color: var(--title-text-color2);
-    width: 270px;
     gap: 30px;  
+
+
+   @include mobile {
+        width: 100%;
+    }
+
+    @include tablet {
+        max-width: 768px;
+        width: calc((100% - 30px)/2);
+    }
+
+    @include desktop  {
+        max-width: 1200px;
+        width: calc((100% - 90px)/4);
+        
+    }
 }
 
 .workers-div{

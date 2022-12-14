@@ -1,12 +1,23 @@
 
 .main-title{
-    font-family: var(--primary-font);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+  
+    @include font (null, 900, 26px, 1.61, 0.06em, var(--title-text-color2));
+
+    @media screen and (min-width:768px) {
+        max-width: 768px;
+        @include font (null, 900, 26px, 1.61, 0.06em, var(--title-text-color2));
+
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width: 1200px;
+        @include font (null, 900, 44px, 1.36, 0.06em, var(--title-text-color2));
+
+       
+    }
+
     text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--title-text-color2);
+   
  }
  

@@ -20,13 +20,13 @@
           <a class="header__logo" href="./index.html"> <span class="header__web"> Web</span>Studio </a>
           <nav class="navigation header__navigation">
               <ul class="menu">
-                <div>
                   <li><a class="menu__item header__factive" href="./index.html">Студія</a></li>
-                </div>
-                 <li><a class="menu__item " href="./portfolio.html">Портфоліо</a></li>
+                  <li><a class="menu__item " href="./portfolio.html">Портфоліо</a></li>
                   <li"><a class="menu__item"href="#">Контакти</a></li>
               </ul>
           </nav>
+
+          <div class="header_contacts">
           <a class="header__contact" href="info@devstudio.com">
                 <svg class="header__svg" width="16" height="12" >
                 <use href="./images/icons.svg#icon-envelope-1"></use>
@@ -36,21 +36,83 @@
                 <use href="./images/icons.svg#icon-smartphone-1"></use>
                </svg>+38 096 111 11 11
             </a>
-          </div>
+        </div>
+
+        <button  class="menu-open" type="button" data-menu-open>
+            <svg  class="menu-svg" width="40" height="40"> 
+            <use href="./images/icons.svg#icon-menu_40px-1"></use>
+           </svg></button>
+
+        <div class="mob__menu is-hidden" data-menu >
+           <div class="container ">
+            
+            <button type="button" class="menu__close" data-menu-close>
+                 <svg  class="svg-modal" width="40" height="40"> 
+                <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+               </svg>
+            </button>
+
+            <ul class="menu_list">
+                <div>
+                  <li class="menu_list_item">
+                     <a class="menu_list_link link" href="./index.html">Студія</a></li>
+                  <li class="menu_list_item"> 
+                    <a class="menu_list_link link" href="./portfolio.html">Портфоліо</a></li>
+                  <li class="menu_list_item"> 
+                    <a class="menu_list_link link"href="#">Контакти</a></li>
+            </ul>
+              
+
+
+    <div class="mob_menu_bottom">
+            <ul class="menu_contact">
+                <li class="menu_contact_item">             
+                     <a class="contact_link_top" href="info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="menu_contact_item">
+                    <a class="contact_link_bottom" href="tel:+380961111111"> +38 096 111 11 11</a>
+
+                </li>
+            </ul>
+        
+    
+          <ul class="soc_list">
+            <li class="soc_list_item">
+                <a class="social_link link" href="#"> Instagram
+                </a>
+            </li>
+            <li class="soc_list_item">
+                <a class="social_link link" href="#"> Twitter
+                </a>
+            </li>
+            <li class="soc_list_item">
+                <a class="social_link link" href="#"> Facebook
+                </a>
+            </li>
+            <li class="soc_list_item">
+                 <a class="social_link link" href="#"> LinkedIn
+                </a>
+            </li>
+          </ul>
+        </div> 
+
+           </div>
+        </div>
+
       </header>
 
     <main>       
             <section class="hero hero__overlay">
-                <div class="container hero-container ">
+                <div class="container hero__container ">
                 
                 <h1 class="main-title">Ефективні рішення для <br/> вашого бізнесу</h1>
                 <button class="button" type="button " data-modal-open >Замовити послугу</button>
                      
                 </div>
-            </section>
+            </section> 
 
 
-            <div class="backdrop is-hidden " data-modal>
+            <div class="backdrop is-hidden" data-modal>
              <div class="modal">
                 <button  class="modal-button" type="button" data-modal-close>
                    <svg  class="svg-modal" width="18" height="18"> 
@@ -145,7 +207,7 @@
 
            
 
-            <section class="description">
+           <section class="description">
 
                 <div class="container">
                  
@@ -159,10 +221,10 @@
                         </div>
 
                         <h3 class="description__header">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="description__paragraph">Ідейні міркування, і навіть початок <br/> повсякденної роботи з формування<br/>  позиції.</p>
+                        <p class="description__paragraph">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
 
-                    <li class="description-item">
+                    <li class="description__item">
                         <div class="description__svg">
                         <svg class="description__icons" width="70" height="70" >
                         <use href="./images/icons.svg#icon-clock-1-1"></use>
@@ -170,10 +232,10 @@
                         </div>
 
                         <h3 class="description__header">ПУНКТУАЛЬНІСТЬ</h3>
-                        <p class="description__paragraph">Завдання організації, особливо рамки <br/> і місце навчання кадрів тягне у себе.</p>
+                        <p class="description__paragraph">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
 
-                    <li  class="description-item">
+                    <li class="description__item">
                         <div class="description__svg">
                         <svg class="description__icons" width="70" height="70" >
                         <use href="./images/icons.svg#icon-diagram-1-1"></use>
@@ -181,10 +243,10 @@
                         </div>
 
                         <h3 class="description__header">ПЛАНУВАННЯ</h3>
-                        <p class="description__paragraph">Так само консультація з широким <br/> активом значною мірою зумовлює.</p>
+                        <p class="description__paragraph">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
 
-                    <li  class="description-item">
+                    <li class="description__item">
                         <div class="description__svg">
                         <svg class="description__icons"  width="70" height="70" >
                         <use href="./images/icons.svg#icon-astronaut-1-1"></use>
@@ -192,11 +254,11 @@
                         </div>
                         
                         <h3 class="description__header">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                        <p class="description__paragraph">Значимість цих проблем настільки <br/> очевидна, що реалізація планових<br/>  завдань.</p>
+                        <p class="description__paragraph">Значимість цих проблем настільки  очевидна, що реалізація планових завдань.</p>
                     </li>
                 </ul>
                 </div>
-            </section>
+            </section> 
 
             <section class="image">
                 <div class="container">
@@ -204,29 +266,62 @@
                
                 <ul class="images__list">
                     <li class="images__item">
+                        <picture>
+                        <source srcset="./images/box1.jpg 1х,
+                            ./images/box1-2x.jpg 2х"
+                            media="(min-width:1200px)">
                         <img src="./images/box1.jpg" width="370" height="294" alt="Зображення 1 ">
-                       <h2 class="image__title">Десктопні додатки</h2>
+                    </picture>
+                    <h2 class="image__title">Десктопні додатки</h2>
                     </li>
+
+
                    <li class="images__item">
+                    <picture>
+                        <source srcset="./images/box2.jpg 1х,
+                            ./images/box2-2x.jpg 2х"
+                            media="(min-width:1200px)">
                         <img src="./images/box2.jpg" width="370" height="294" alt="Зображення 2">
-                        <h2 class="image__title">Мобільні додатки</h2>
+                    </picture>
+                     <h2 class="image__title">Мобільні додатки</h2>
                     </li>
+
+
+                  
                     <li class="images__item">
+                        <picture>
+                        <source srcset="./images/box3.jpg 1х,
+                            ./images/box3-2x.jpg 2х"
+                            media="(min-width:1200px)">
                         <img src="./images/box3.jpg" width="370" height="294" alt="Зображення 3">
-                        <h2 class="image__title">Дизайнерські рішення</h2>
+                    </picture>
+                    <h2 class="image__title">Дизайнерські рішення</h2>
                     </li>
                 </ul>
                  </div>
             </section>
+
         
-        <section class="workers-list-common">
+         <section class="workers-list-common">
                <div class="container ">
                 <h2 class="title-section">Наша команда</h2>
                 
                 <ul class="workers-list">
                     <li  class="section-title-item">
-                        
+                     <picture>
+                        <source srcset="./images/ІгорДем'яненко.jpg 1х,
+                                       ./images/ІгорДем'яненко-2x.jpg 2х"
+                                       media="(min-width:1200px)">
+                        <source srcset="./images/ІгорДем'яненко.jpg 1х,
+                                        ./images/ІгорДем'яненко-2x-tab.jpg 2х"
+                                       media="(min-width:768px)">
+                        <source srcset="./images/ІгорДем'яненко.jpg 1х,
+                                        ./images/ІгорДем'яненко-2x-mob.jpg 2х"
+                                        media="(min-width:480px)">
+
                         <img src="./images/ІгорДем'яненко.jpg" width="270" height="260"  alt="Ігор Дем'яненко"> 
+                     </picture>
+                
                         <div class="workers-div">
 
                             <div class="workers-capture">
@@ -267,7 +362,19 @@
                         </div>
                     </li>
                     <li class="section-title-item">
+                        <picture>
+                        <source srcset="./images/ОльгаРєпіна.jpg 1х,
+                                       ./images/ОльгаРєпіна-2x.jpg 2х"
+                                       media="(min-width:1200px)">
+                        <source srcset="./images/ОльгаРєпіна.jpg 1х,
+                                        ./images/ОльгаРєпіна-2x-tab.jpg 2х"
+                                       media="(min-width:768px)">
+                        <source srcset="./images/ОльгаРєпіна.jpg 1х,
+                                        ./images/ОльгаРєпіна-2x-mob.jpg 2х"
+                                        media="(min-width:480px)">
+
                         <img src="./images/ОльгаРєпіна.jpg" width="270" height="260" alt="Ольга Рєпіна"> 
+                        </picture>
                         <div class="workers-div">
                             <div class="workers-capture">
                             <h3 class="third-headerworkers"> Ольга Рєпіна </h3> 
@@ -306,7 +413,21 @@
                         </div>
                     </li>
                     <li class="section-title-item">
+                        <picture>
+
+                        <source srcset="./images/МихайлоЄрмаков.jpg 1х,
+                                       ./images/МихайлоЄрмаков-2x.jpg 2х"
+                                       media="(min-width:1200px)">
+                        <source srcset="./images/МихайлоЄрмаков.jpg 1х,
+                                        ./images/МихайлоЄрмаков-2x-tab.jpg 2х"
+                                       media="(min-width:768px)">
+                        <source srcset="./images/МихайлоЄрмаков.jpg 1х,
+                                        ./images/МихайлоЄрмаков-2x-mob.jpg 2х"
+                                        media="(min-width:480px)">
+
                         <img src="./images/МихайлоЄрмаков.jpg" width="270" height="260" alt="Михайло Єрмаков"> 
+                        </picture>
+                        
                         <div class="workers-div">
                             <div class="workers-capture">
                             <h3 class="third-headerworkers">Михайло Єрмаков</h3> 
@@ -345,8 +466,18 @@
                         </div>
                     </li>
                     <li class="section-title-item">
+                        <picture>
+                            <source srcset="./images/МиколаТарасов.jpg 1х,
+                                       ./images/МиколаТарасов-2x.jpg 2х"
+                                       media="(min-width:1200px)">
+                        <source srcset="./images/МиколаТарасов.jpg 1х,
+                                        ./images/МиколаТарасов-2x-tab.jpg 2х"
+                                       media="(min-width:768px)">
+                        <source srcset="./images/МиколаТарасов.jpg 1х,
+                                        ./images/МиколаТарасов-2x-mob.jpg 2х"
+                                        media="(min-width:480px)">
                         <img src="./images/МиколаТарасов.jpg" width="270" height="260" alt="Микола Тарасов"> 
-                        
+                       </picture>
                 
                         <div class="workers-div">
                             <div class="workers-capture">
@@ -372,14 +503,14 @@
                                 <li class="social-netw">
                                     <a class="link-social-netw" href="#">
                                     <svg class="social-netw-icons" width= "20" height="20">
-                                    <use href="./images/icons.svg#icon-facebook-1-1"></use>
+                                     <use href="./images/icons.svg#icon-facebook-1-1"></use>
                                     </svg>
                                     </a>
-                                </li>
+                                </li> 
                                 <li class="social-netw">
                                     <a class="link-social-netw" href="#">
                                     <svg class="social-netw-icons" width= "20" height="20">
-                                    <use href="./images/icons.svg#icon-linkedin-1-1"></use>
+                                     <use href="./images/icons.svg#icon-linkedin-1-1"></use>
                                     </svg>
                                     </a>
                                 </li>
@@ -388,19 +519,19 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section>   
 
-    
-    
-    <section class="permanent-clients">
+  
+     
+ <section class="permanent-clients">
         
         <div class="container pclient-container">
             <h2 class="p-header">Постійні клієнти </h2>
 
             <ul  class="pclient-list">
 
-                <li class="pclient-item">
-                     <a class="link-pclient" href="#">
+                <li class="pclient-item"> 
+                     <a class="link-pclient" href="#"> 
                     <svg class="svg-pclient" width= "106" height="60">
                     <use href="./images/icons.svg#icon-Logo-1"></use>
                     </svg>
@@ -444,7 +575,7 @@
                     <use href="./images/icons.svg#icon-Logo-7-1"></use>
                     </svg>
                 </a>
-                </li>
+               </li>
             </ul>
 
         </div>
@@ -454,7 +585,7 @@
    
 
 
-    <footer class="footer">
+  <footer class="footer">
         <div class="container footer-container">
 
         <div class="footer-mainel">
@@ -544,8 +675,8 @@
     </div> 
     </footer>
 
-    <script src="./js/modal.js"></script>
-  
-    
+    <script src="./js/modal.js"></script> 
+    <script src="./js/menu.js"></script> 
+   
 </body>
-</html>
+</html>   

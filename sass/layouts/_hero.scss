@@ -1,23 +1,70 @@
 
 .hero{
     background-color: #2F303A;
-    padding-top: 200px;
-    padding-bottom: 200px;
+  
+
+    padding-top: 118px;
+    padding-bottom:118px;
+   
+    @include desktop{
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 100%;
+    }
 }
 
 .hero__overlay{
-    height: 600px;
+    width: 100%;
+    height: 400px;
+
     max-width: 1600px;
+    
     margin-right: auto;
     margin-left: auto;
     border-color: #212121;
     background-image: 
-    linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
+   var(--gradient)
+   url(../../images/hero-mob.jpg);
 
-    url(../images/overlay.png)
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+
+    @include retina {
+    background-image: 
+    var(--gradient)
+    url(../../images/hero-mob-2x.jpg);
+  }
     
+
+    @include tablet { 
+        background-image: 
+        var(--gradient)
+        url(../../images/hero_tab.jpg);
+
+    @include retina {
+          background-image: 
+          var(--gradient)
+          url(../../images/hero_tab-2x.jpg);
+        }   
+    }
+
+    @include desktop {
+
+        height: 600px;
+        background-image: 
+        var(--gradient)
+        url(../../images/hero_desktop.jpg);
+     
+    @include retina{
+          background-image: 
+          var(--gradient)
+          url(../../images/hero_tab-2x.jpg);
+        }  
+       
+     
+       
+    }
 }
 
 
