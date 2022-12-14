@@ -468,7 +468,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .header__leftcontact {
-    margin-left: 50px;
+    margin-left: 60px;
+    margin-right: 30px;
   }
 }
 
@@ -797,6 +798,7 @@ img {
     max-width: 1200px;
     display: block;
     margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -818,7 +820,7 @@ img {
   display: flex;
   width: 100%;
   margin: 0;
-  width: calc((100% - 30px) / 3);
+  width: calc(100% - 60px)/3;
 }
 
 .image__title {
