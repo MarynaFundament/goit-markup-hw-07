@@ -37,9 +37,8 @@
      margin-bottom: 30px;
 
      @include desktop{
-
     @include font (var(--primary-font), 700, 36px, 1.16, 0.03em, null);
-    
+    margin-bottom: 50px;
      }        
  }
 

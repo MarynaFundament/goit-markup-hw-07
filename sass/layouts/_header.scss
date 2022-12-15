@@ -84,7 +84,6 @@
 .header__sactive::after{
     content: ' ';
     display: inline-block;
-
     position: absolute;
     bottom: 0;
     left: 0;
@@ -184,16 +183,18 @@
 }
 
 .mob__menu{
+
+    
     position: fixed;
     width: 100vw; 
-    height: 100vh;
+    height: 100dvh;
     top: 0; 
     right: 0;
     
     padding-top: 48px;
-    padding-right: 40px;
+    padding-right: 15px;
     padding-bottom: 48px;
-    padding-left: 40px;
+    padding-left: 15px;
 
     background-color: #fff;
 
@@ -206,7 +207,11 @@
         justify-content: space-between;
         overflow: auto;
     }
-
+@include mobile{
+    padding-right: 40px;
+    padding-left: 40px;
+      }
+     
  @include tablet{
    display: none;
  }
@@ -284,13 +289,15 @@ color: #212121;
 .contact_link_top{
 font-family: var(--primary-font);
 font-weight: 500;
-font-size: 34px;
+font-size:25px;
 line-height:calc(40/34);
 
 letter-spacing: 0.02em;
 color: var(--accent-color);
 
-
+@include mobile{
+font-size: 34px;
+}
 }
 
 .contact_link_bottom{
@@ -306,18 +313,24 @@ color: #757575;
 
 .soc_list{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin-left: 0;
+
+@include mobile{
+    flex-wrap: nowrap;
+}
 }
 
 .soc_list_item{
     position: relative;
 }
 
-.soc_list_item::after{
+.soc_list_item:not(:last-child)::after{
     content: ' ';
     position: absolute;
     bottom: 50%;
+
     width: 22px;
     height: 1px;
     transform: rotate(90deg);

@@ -25,14 +25,13 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 
 text-align: center;
-padding-bottom: 30px; 
+margin-bottom: 30px; 
 
 @include desktop{
 font-size: 36px;
 line-height: 1.12;
 letter-spacing: 0.03em;
-
-padding-bottom: 50px; 
+margin-bottom: 50px; 
     
 } 
 }
