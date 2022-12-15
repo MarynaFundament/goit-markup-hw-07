@@ -24,7 +24,7 @@
     border-color: #212121;
     background-image: 
    var(--gradient)
-   url(../../images/hero-mob.jpg);
+   url(../images/hero-mob.jpg);
 
     background-repeat: no-repeat;
     background-position: center;
@@ -33,14 +33,14 @@
     @include retina {
     background-image: 
     var(--gradient)
-    url(../../images/hero-mob-2x.jpg);
+    url(../images/hero-mob-2x.jpg);
   }
     
 
     @include tablet { 
         background-image: 
         var(--gradient)
-        url(../../images/hero_tab.jpg);
+        url(../images/hero_tab.jpg);
 
     @include retina {
           background-image: 
@@ -54,15 +54,13 @@
         height: 600px;
         background-image: 
         var(--gradient)
-        url(../../images/hero_desktop.jpg);
+        url(../images/hero_desktop.jpg);
      
     @include retina{
           background-image: 
           var(--gradient)
-          url(../../images/hero_tab-2x.jpg);
+          url(../images/hero_tab-2x.jpg);
         }  
-       
-     
        
     }
 }
