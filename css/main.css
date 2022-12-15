@@ -1375,7 +1375,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-text-color2);
-  margin-left: 120px;
+  margin-left: 90px;
 }
 @media screen and (min-width: 480px) {
   .logo-footer {
@@ -1431,6 +1431,9 @@ img {
   text-decoration: none;
 }
 
+.footer-icons-container {
+  margin-bottom: 50px;
+}
 @media screen and (min-width: 480px) {
   .footer-icons-container {
     margin-top: 60px;
@@ -1448,6 +1451,10 @@ img {
     max-width: 1200px;
     margin-top: 0px;
   }
+}
+
+.footer-mainel {
+  margin-bottom: 50px;
 }
 
 .footer-t {
