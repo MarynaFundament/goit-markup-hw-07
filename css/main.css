@@ -1525,12 +1525,6 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .email-h {
   font-family: var(--primary-font);
   font-weight: 700;
@@ -1623,4 +1617,11 @@ img {
   position: absolute;
   top: 13px;
   right: 30px;
+}
+
+.footer-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }/*# sourceMappingURL=main.css.map */

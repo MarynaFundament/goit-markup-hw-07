@@ -191,12 +191,6 @@
     
 }
 
-.footer-form{ 
-    display:flex; 
-    flex-direction: column;
-     align-items: center;
-}
-
 .email-h{
     @include font (var(--primary-font), 700, 14px, 1.14, 0.03em, var(--title-text-color2));
     text-transform: uppercase;
@@ -282,4 +276,14 @@
         position: absolute;
         top: 13px;
         right: 30px;
+     }
+
+     .footer-form{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+     }
+
+     .email-footer{
      }
