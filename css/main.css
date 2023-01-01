@@ -87,7 +87,8 @@ img {
 
 .modal {
   position: relative;
-  width: auto;
+  width: 95vw;
+  max-width: 528px;
   min-height: 581px;
   background-color: #fff;
   position: absolute;
@@ -96,11 +97,6 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
   padding: 40px;
-}
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 528px;
-  }
 }
 
 .modal-button {
@@ -826,6 +822,8 @@ img {
   .image {
     max-width: 1200px;
     display: block;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -1368,6 +1366,13 @@ img {
   }
 }
 
+.footer-mainel {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .logo-footer {
   font-family: var(--additional-font);
   font-weight: 700;
@@ -1375,12 +1380,8 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-text-color2);
-  margin-left: 90px;
-}
-@media screen and (min-width: 480px) {
-  .logo-footer {
-    margin-left: 150px;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .logo-footer {
@@ -1433,12 +1434,9 @@ img {
 
 .footer-icons-container {
   margin-bottom: 50px;
-}
-@media screen and (min-width: 480px) {
-  .footer-icons-container {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .footer-icons-container {
@@ -1453,10 +1451,6 @@ img {
   }
 }
 
-.footer-mainel {
-  margin-bottom: 50px;
-}
-
 .footer-t {
   font-family: var(--primary-font);
   font-weight: 700;
@@ -1466,7 +1460,8 @@ img {
   color: var(--title-text-color2);
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .footer-t {
@@ -1530,6 +1525,12 @@ img {
   margin-bottom: 9px;
 }
 
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .email-h {
   font-family: var(--primary-font);
   font-weight: 700;
@@ -1538,12 +1539,8 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color2);
   text-transform: uppercase;
-  margin-left: 60px;
-}
-@media screen and (min-width: 480px) {
-  .email-h {
-    margin-left: 120px;
-  }
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .email-h {

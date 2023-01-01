@@ -21,7 +21,8 @@
 
 .modal{
     position: relative;
-    width: auto;
+    width:95vw;
+    max-width: 528px;
     min-height: 581px;
     background-color: #fff;
     position: absolute;
@@ -31,9 +32,9 @@
     transition: transform 250ms var(--timing-function);
 
     padding: 40px;
-    @include mobile{
-        width: 528px;
-    }
+    // @include mobile{
+    //     width: 528px;
+    // }
 }
 
 

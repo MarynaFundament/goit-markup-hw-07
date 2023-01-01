@@ -34,14 +34,22 @@
 
 }
 
+.footer-mainel{
+    margin-bottom: 50px;
+    display:flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
 .logo-footer{
     @include 
     font (var(--additional-font), 700, 26px, 1.19, 0.03em, var(--title-text-color2));
-       margin-left: 90px;
+    margin-left: auto;
+    margin-right: auto;
 
-    @include mobile{
-        margin-left: 150px;
-       } 
+    // @include mobile{
+    //     margin-left: 150px;
+    //    } 
 
      @include tablet{
         max-width: 768px;
@@ -87,11 +95,15 @@
 
 .footer-icons-container{
     margin-bottom: 50px;
+    display:flex; 
+    flex-direction: column; 
+    align-items: center;
 
-    @include mobile{
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
+
+    // @include mobile{
+    //     margin-top: 60px;
+    //     margin-bottom: 60px;
+    // }
 
     @include tablet {
         margin-top: 0px;
@@ -105,18 +117,13 @@
 
 }
 
-.footer-mainel{
-    margin-bottom: 50px;
-}
-
-
-
 .footer-t{
     @include font (var(--primary-font), 700, 14px, 1.14, 0.03em, var(--title-text-color2));
 
     text-transform: uppercase;
     margin-bottom: 20px;
-    margin-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
 
     @include mobile {
         max-width: 480px;
@@ -184,16 +191,17 @@
     
 }
 
-.email-h{
-    
-    @include font (var(--primary-font), 700, 14px, 1.14, 0.03em, var(--title-text-color2));
+.footer-form{ 
+    display:flex; 
+    flex-direction: column;
+     align-items: center;
+}
 
+.email-h{
+    @include font (var(--primary-font), 700, 14px, 1.14, 0.03em, var(--title-text-color2));
     text-transform: uppercase;
-    margin-left: 60px;
-    
-    @include mobile {
-        margin-left: 120px;
-    }
+    margin-right: auto;
+    margin-left: auto;
 
     @include tablet{
         max-width: 768px;
@@ -204,14 +212,9 @@
         max-width: 1200px;
         margin-left: 93px;
     }
-    
     }
     
-    .email-list{
-        // display: flex;
-        // flex-wrap: wrap;
-        // justify-content: center;
-
+.email-list{
         margin: 0 auto;
         margin-top: 20px;
 
@@ -220,10 +223,9 @@
         display: flex;
         flex-wrap: nowrap;
     }
-    
     }
     
-    .email-footer{
+.email-footer{
         background-color: transparent;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -258,7 +260,6 @@
     .button-footer{
     
         min-width: 160px;
-
         @include font (var(--primary-font), 700, 16px, 1.87, 0.06em, var(--title-text-color2));
 
         display: block;
