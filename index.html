@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="uk_UK">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="./css/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/src/js.cookie.min.js"></script>
 
     <title>Main</title>
 </head>
@@ -16,8 +19,11 @@
     <header class="header">
         
         <div class="container header__container">
+            
     
           <a class="header__logo" href="./index.html"> <span class="header__web"> Web</span>Studio </a>
+         
+         
           <nav class="navigation header__navigation">
               <ul class="menu">
                   <li><a class="menu__item header__factive" href="./index.html">Студія</a></li>
@@ -99,7 +105,7 @@
            </div>
         </div>
 
-      </header>
+    </header>
 
     <main>       
             <section class="hero hero__overlay">
@@ -266,12 +272,17 @@
                
                 <ul class="images__list">
                     <li class="images__item">
-                        <picture>
-                        <source srcset="./images/box1.jpg 1х,
+                    <picture>
+                        <source srcset="
+                            ./images/box1.jpg 1х,
                             ./images/box1-2x.jpg 2х"
                             media="(min-width:1200px)">
-                        <img src="./images/box1.jpg" width="370" height="294" alt="Зображення 1 ">
+                        <img src="./images/box1.jpg" 
+                        width="370" 
+                        height="294"
+                        alt="Зображення 1 ">
                     </picture>
+
                     <h2 class="image__title">Десктопні додатки</h2>
                     </li>
 
@@ -645,19 +656,29 @@
    <div class="footer-form">
     <span class="email-h">Підпишіться на розсилку</span>
 
-        <form class="footer-form">
-         <input type="email" 
-          name="user-email"
-          placeholder="E-mail"
-          class="email-footer">
-
-          <button class="button-footer" type="button ">Підписатися
+    <ul class="email-list">
+      
+        <li>
+            <form>
+             <input type="email" 
+              name="user-email"
+              placeholder="E-mail"
+              class="email-footer">
+            </form>
+        </li>
+      
+    
+        <li>  
+            <button class="button-footer" type="button ">Підписатися
+            <a class="telegram-icons" href="#">
                 <svg class="footer-modal-icons" width= "24" height="24">
                 <use href="./images/icons.svg#icon-icon-send-1"></use>
                 </svg>
+             </a>
         </button>
-        </form>
- 
+    
+        </li>
+      </ul>
   
 
    </div>

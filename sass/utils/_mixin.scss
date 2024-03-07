@@ -22,15 +22,15 @@
     }
 
 @mixin desktop{
-        @media screen and (min-width:1200px) {
-         @content;
+      @media screen and (min-width:1200px) {
+      @content;
         }
         }
 
  @mixin retina{
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       @content;
     }
             }
